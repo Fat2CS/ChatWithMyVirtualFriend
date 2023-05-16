@@ -60,9 +60,9 @@ export default function Chat() {
 
   const openai = new OpenAIApi(
     new Configuration({
-      organization: "org-8fdQgzwomN8mD3PVkgvYeZes",
-      // ApiKey: { openaiApiKey }
-      ApiKey: "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"
+  organization: "org-8fdQgzwomN8mD3PVkgvYeZes"
+      ApiKey: { openaiApiKey }
+     
     })
   );
   // console.log(apiKey);
@@ -123,8 +123,8 @@ export default function Chat() {
         {
           headers: {
             "Content-Type": "application/json",
-            // Authorization: `Bearer ${openaiApiKey}`
-            Authorization: `Bearer ${"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"}`
+            Authorization: `Bearer ${openaiApiKey}`
+          
           }
         }
       );
